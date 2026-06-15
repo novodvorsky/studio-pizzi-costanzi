@@ -17,7 +17,7 @@ export default function Logo({ size = 48, variant = 'dark', showText = false }: 
         viewBox="0 0 60 60"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        aria-label="Studio Pizzi & Costanzi Logo"
+        aria-label="Studio Costanzi & Pizzi Logo"
         role="img"
       >
         {/* Background square */}
@@ -68,13 +68,13 @@ export default function Logo({ size = 48, variant = 'dark', showText = false }: 
             className="font-serif font-bold tracking-widest uppercase text-xs"
             style={{ color: variant === 'white' ? '#8B1E24' : '#1F1F1F' }}
           >
-            Studio Pizzi & Costanzi
+            Studio Costanzi & Pizzi
           </div>
           <div
             className="text-xs tracking-wider"
             style={{ color: variant === 'white' ? 'rgba(139,30,36,0.7)' : 'rgba(31,31,31,0.6)' }}
           >
-            Dottori Commercialisti
+            Commercialisti
           </div>
         </div>
       )}

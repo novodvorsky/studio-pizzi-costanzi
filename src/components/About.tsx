@@ -201,7 +201,7 @@ export default function About() {
               <div className="mt-5 flex items-center gap-3">
                 <div className="h-px flex-1 bg-white/10" />
                 <span className="text-gold/70 text-[11px] tracking-[0.15em] uppercase font-medium">
-                  Studio Pizzi & Costanzi
+                  Studio Costanzi & Pizzi
                 </span>
                 <div className="h-px flex-1 bg-white/10" />
               </div>

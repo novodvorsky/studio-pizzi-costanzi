@@ -20,11 +20,11 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.pizzicostanzi.it'),
   title: {
-    default: 'Studio Pizzi & Costanzi | Commercialisti Milano dal 2002',
-    template: '%s | Studio Pizzi & Costanzi',
+    default: 'Studio Costanzi & Pizzi | Commercialisti Milano dal 2002',
+    template: '%s | Studio Costanzi & Pizzi',
   },
   description:
-    'Studio Pizzi & Costanzi – Dottori Commercialisti a Milano dal 2002. Consulenza fiscale, societaria, revisione contabile e dichiarazioni fiscali. Via Panfilo Castaldi 8, Milano.',
+    'Studio Costanzi & Pizzi – Commercialisti a Milano dal 2002. Consulenza fiscale, societaria, revisione contabile e dichiarazioni fiscali. Via Panfilo Castaldi 8, Milano.',
   keywords: [
     'commercialista Milano',
     'studio commercialista Milano',
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     'revisione contabile Milano',
     'dichiarazioni fiscali Milano',
     'dottore commercialista Milano',
-    'Studio Pizzi Costanzi',
+    'Studio Costanzi Pizzi',
     'contabilità Milano',
     'consulenza societaria Milano',
     'fiscalista Milano',
@@ -41,8 +41,8 @@ export const metadata: Metadata = {
     { name: 'Mario Stefano Pizzi' },
     { name: 'Giuseppe Costanzi' },
   ],
-  creator: 'Studio Pizzi & Costanzi',
-  publisher: 'Studio Pizzi & Costanzi',
+  creator: 'Studio Costanzi & Pizzi',
+  publisher: 'Studio Costanzi & Pizzi',
   robots: {
     index: true,
     follow: true,
@@ -59,8 +59,8 @@ export const metadata: Metadata = {
     locale: 'it_IT',
     alternateLocale: 'en_GB',
     url: 'https://www.pizzicostanzi.it',
-    siteName: 'Studio Pizzi & Costanzi',
-    title: 'Studio Pizzi & Costanzi – Commercialisti Milano dal 2002',
+    siteName: 'Studio Costanzi & Pizzi',
+    title: 'Studio Costanzi & Pizzi – Commercialisti Milano dal 2002',
     description:
       'Oltre 20 anni di esperienza nella consulenza fiscale, societaria e amministrativa a Milano. Professionisti al servizio di imprese, professionisti e privati.',
     images: [
@@ -68,13 +68,13 @@ export const metadata: Metadata = {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Studio Pizzi & Costanzi – Commercialisti Milano',
+        alt: 'Studio Costanzi & Pizzi – Commercialisti Milano',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Studio Pizzi & Costanzi – Commercialisti Milano',
+    title: 'Studio Costanzi & Pizzi – Commercialisti Milano',
     description:
       'Oltre 20 anni di esperienza nella consulenza fiscale e societaria a Milano.',
     images: ['/og-image.jpg'],
@@ -94,8 +94,8 @@ export const metadata: Metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'AccountingService',
-  name: 'Studio Pizzi & Costanzi',
-  alternateName: 'Pizzi & Costanzi Dottori Commercialisti',
+  name: 'Studio Costanzi & Pizzi',
+  alternateName: 'Costanzi & Pizzi Commercialisti',
   description:
     'Studio professionale di commercialisti fondato nel 2002 da Mario Stefano Pizzi e Giuseppe Costanzi. Consulenza fiscale, societaria, revisione contabile e dichiarazioni fiscali a Milano.',
   url: 'https://www.pizzicostanzi.it',

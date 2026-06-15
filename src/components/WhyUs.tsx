@@ -123,7 +123,7 @@ export default function WhyUs() {
         >
           <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-4">
             {[
-              'Ordine dei Dottori Commercialisti di Milano',
+              'Ordine dei Commercialisti di Milano',
               'Fondato nel 2002',
               'Via Panfilo Castaldi 8, Milano',
             ].map((item) => (

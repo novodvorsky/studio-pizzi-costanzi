@@ -1,4 +1,4 @@
-# Studio Pizzi & Costanzi – Deployment Guide
+# Studio Costanzi & Pizzi – Deployment Guide
 
 ## Quick Start (Local Development)
 

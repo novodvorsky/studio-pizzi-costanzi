@@ -74,7 +74,7 @@ export default function Location() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Mappa Studio Pizzi & Costanzi – Via Panfilo Castaldi 8, Milano"
+              title="Mappa Studio Costanzi & Pizzi – Via Panfilo Castaldi 8, Milano"
             />
           </motion.div>
 
@@ -88,9 +88,9 @@ export default function Location() {
             {/* Red header */}
             <div className="bg-primary px-7 py-6">
               <h3 className="font-serif text-white font-bold text-lg mb-0.5">
-                Studio Pizzi & Costanzi
+                Studio Costanzi & Pizzi
               </h3>
-              <p className="text-white/60 text-sm">Dottori Commercialisti</p>
+              <p className="text-white/60 text-sm">Commercialisti</p>
             </div>
 
             <div className="p-7 flex-1 space-y-6">

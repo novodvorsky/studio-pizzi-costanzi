@@ -31,10 +31,10 @@ export default function Footer() {
               <Logo size={44} />
               <div>
                 <div className="font-serif text-sm font-bold tracking-widest uppercase text-white">
-                  Studio Pizzi & Costanzi
+                  Studio Costanzi & Pizzi
                 </div>
                 <div className="text-white/40 text-[10px] tracking-wider font-light">
-                  Dottori Commercialisti
+                  Commercialisti
                 </div>
               </div>
             </div>

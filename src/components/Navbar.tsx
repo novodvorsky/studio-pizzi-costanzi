@@ -127,14 +127,14 @@ export default function Navbar() {
                     scrolled ? 'text-charcoal' : 'text-white'
                   }`}
                 >
-                  Studio Pizzi & Costanzi
+                  Studio Costanzi & Pizzi
                 </div>
                 <div
                   className={`text-[10px] tracking-[0.1em] font-light transition-colors duration-300 ${
                     scrolled ? 'text-charcoal/60' : 'text-white/60'
                   }`}
                 >
-                  Dottori Commercialisti
+                  Commercialisti
                 </div>
               </div>
             </button>
