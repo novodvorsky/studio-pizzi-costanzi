@@ -10,7 +10,7 @@ export const en: Translations = {
     cta: 'Request Consultation',
   },
   hero: {
-    eyebrow: 'Studio Pizzi & Costanzi — Chartered Accountants',
+    eyebrow: 'Studio Costanzi & Pizzi — Commercialisti',
     title: 'Tax, Corporate & Administrative Advisory Since 2002',
     subtitle: 'Over twenty years of experience serving businesses, professionals, and individuals.',
     cta1: 'Contact Us',
@@ -21,7 +21,7 @@ export const en: Translations = {
     eyebrow: 'Our Story',
     title: 'About Us',
     description:
-      'Studio Pizzi & Costanzi is a professional firm founded in 2002 by Chartered Accountants Mario Stefano Pizzi and Giuseppe Costanzi. For over twenty years we have provided tax, corporate, and administrative assistance to businesses, professionals, and individuals, with a rigorously personalized approach focused on maximum reliability.',
+      'Studio Costanzi & Pizzi is a professional firm founded in 2002 by Commercialisti Giuseppe Costanzi and Mario Stefano Pizzi. For over twenty years we have provided tax, corporate, and administrative assistance to businesses, professionals, and individuals, with a rigorously personalized approach focused on maximum reliability.',
     description2:
       'Our philosophy is built on technical expertise, continuity of professional relationships, and the ability to anticipate our clients\' needs in a constantly evolving regulatory environment.',
     stats: [
@@ -31,7 +31,7 @@ export const en: Translations = {
     ],
     partners: {
       title: 'Founding Partners',
-      list: ['Dr. Mario Stefano Pizzi', 'Dr. Giuseppe Costanzi'],
+      list: ['Dr. Giuseppe Costanzi', 'Rag. Mario Stefano Pizzi'],
     },
     values: [
       'Professionalism',
@@ -122,8 +122,8 @@ export const en: Translations = {
       note: 'By appointment',
     },
     contact: {
-      email: 'info@pizzicostanzi.it',
-      phone: '+39 02 XXXXXXX',
+      email: 'info@cptax.it',
+      phone: '+39 02 63793485',
     },
     directions: 'Easily accessible via Metro lines MM2 Gioia and MM3 Repubblica.',
   },
@@ -138,7 +138,7 @@ export const en: Translations = {
       email: 'Email Address',
       emailPlaceholder: 'mario.rossi@email.com',
       phone: 'Phone Number',
-      phonePlaceholder: '+39 02 XXXXXXX',
+      phonePlaceholder: '+39 02 63793485',
       message: 'Your message',
       messagePlaceholder: 'Briefly describe your needs...',
       submit: 'Send Message',
@@ -151,8 +151,8 @@ export const en: Translations = {
     },
     info: {
       address: 'Via Panfilo Castaldi, 8\nMilan, 20124 MI',
-      email: 'info@pizzicostanzi.it',
-      phone: '+39 02 XXXXXXX',
+      email: 'info@cptax.it',
+      phone: '+39 02 63793485',
       addressLabel: 'Address',
       emailLabel: 'Email',
       phoneLabel: 'Phone',
@@ -175,20 +175,20 @@ export const en: Translations = {
       title: 'Contact',
     },
     address: 'Via Panfilo Castaldi, 8\nMilan, 20124 MI',
-    email: 'info@pizzicostanzi.it',
-    phone: '+39 02 XXXXXXX',
-    copyright: '© 2024 Studio Pizzi & Costanzi. All rights reserved.',
-    legal: 'VAT: XXXXXXXXXXXXXXX | Registered with the Order of Chartered Accountants of Milan',
+    email: 'info@cptax.it',
+    phone: '+39 02 63793485',
+    copyright: '© 2026 Studio Costanzi & Pizzi. All rights reserved.',
+    legal: 'Registered with the Order of Commercialisti of Milan',
     privacyPolicy: 'Privacy Policy',
     cookiePolicy: 'Cookie Policy',
   },
   meta: {
-    title: 'Studio Pizzi & Costanzi | Chartered Accountants Milan Since 2002',
+    title: 'Studio Costanzi & Pizzi | Commercialisti Milan Since 2002',
     description:
-      'Studio Pizzi & Costanzi – Chartered Accountants in Milan since 2002. Tax advisory, corporate services, statutory audit, and tax returns. Via Panfilo Castaldi 8.',
+      'Studio Costanzi & Pizzi – Commercialisti in Milan since 2002. Tax advisory, corporate services, statutory audit, and tax returns. Via Panfilo Castaldi 8.',
     keywords:
-      'chartered accountant Milan, tax advisory Milan, accounting firm Milan, statutory audit Milan, tax returns Milan, Pizzi Costanzi',
-    ogTitle: 'Studio Pizzi & Costanzi – Chartered Accountants Milan',
+      'commercialista Milan, tax advisory Milan, accounting firm Milan, statutory audit Milan, tax returns Milan, Costanzi Pizzi',
+    ogTitle: 'Studio Costanzi & Pizzi – Commercialisti Milan',
     ogDescription:
       'Over 20 years of experience in tax, corporate, and administrative advisory in Milan. Professionals serving businesses, professionals, and individuals.',
   },

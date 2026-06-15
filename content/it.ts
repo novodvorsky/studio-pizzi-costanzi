@@ -8,7 +8,7 @@ export const it = {
     cta: 'Richiedi Consulenza',
   },
   hero: {
-    eyebrow: 'Studio Pizzi & Costanzi — Dottori Commercialisti',
+    eyebrow: 'Studio Costanzi & Pizzi — Commercialisti',
     title: 'Consulenza fiscale, societaria e amministrativa dal 2002',
     subtitle: 'Oltre vent\'anni di esperienza al servizio di imprese, professionisti e privati.',
     cta1: 'Contattaci',
@@ -19,7 +19,7 @@ export const it = {
     eyebrow: 'La Nostra Storia',
     title: 'Chi Siamo',
     description:
-      'Studio Pizzi & Costanzi è uno studio professionale fondato nel 2002 dai Dottori Commercialisti Mario Stefano Pizzi e Giuseppe Costanzi. Da oltre vent\'anni forniamo assistenza fiscale, societaria e amministrativa a imprese, professionisti e privati, con un approccio rigorosamente personalizzato e orientato alla massima affidabilità.',
+      'Studio Costanzi & Pizzi è uno studio professionale fondato nel 2002 dai Commercialisti Dott. Giuseppe Costanzi e Rag. Mario Stefano Pizzi. Da oltre vent\'anni forniamo assistenza fiscale, societaria e amministrativa a imprese, professionisti e privati, con un approccio rigorosamente personalizzato e orientato alla massima affidabilità.',
     description2:
       'La nostra filosofia si fonda sulla competenza tecnica, sulla continuità del rapporto professionale e sulla capacità di anticipare le esigenze dei clienti in un contesto normativo in costante evoluzione.',
     stats: [
@@ -29,7 +29,7 @@ export const it = {
     ],
     partners: {
       title: 'I Soci Fondatori',
-      list: ['Dott. Mario Stefano Pizzi', 'Dott. Giuseppe Costanzi'],
+      list: ['Dott. Giuseppe Costanzi', 'Rag. Mario Stefano Pizzi'],
     },
     values: [
       'Professionalità',
@@ -113,15 +113,15 @@ export const it = {
       country: 'Italia',
     },
     description:
-      'A pochi passi da Milano Centrale e Piazza della Repubblica, nel cuore del centro direzionale di Milano.',
+      'A pochi passi dalla Stazione di Milano Centrale e Piazza della Repubblica, nel cuore del centro direzionale di Milano.',
     hours: {
       title: 'Orari di Ricevimento',
       schedule: 'Lunedì – Venerdì: 9:00 – 13:00 / 14:00 – 18:00',
       note: 'Su appuntamento',
     },
     contact: {
-      email: 'info@pizzicostanzi.it',
-      phone: '+39 02 XXXXXXX',
+      email: 'info@cptax.it',
+      phone: '+39 02 63793485',
     },
     directions: 'Facilmente raggiungibile con MM2 Gioia e MM3 Repubblica.',
   },
@@ -136,7 +136,7 @@ export const it = {
       email: 'Indirizzo Email',
       emailPlaceholder: 'mario.rossi@email.it',
       phone: 'Numero di Telefono',
-      phonePlaceholder: '+39 02 XXXXXXX',
+      phonePlaceholder: '+39 02 63793485',
       message: 'Il vostro messaggio',
       messagePlaceholder: 'Descrivete brevemente la vostra esigenza...',
       submit: 'Invia Messaggio',
@@ -149,8 +149,8 @@ export const it = {
     },
     info: {
       address: 'Via Panfilo Castaldi, 8\nMilano, 20124 MI',
-      email: 'info@pizzicostanzi.it',
-      phone: '+39 02 XXXXXXX',
+      email: 'info@cptax.it',
+      phone: '+39 02 63793485',
       addressLabel: 'Indirizzo',
       emailLabel: 'Email',
       phoneLabel: 'Telefono',
@@ -174,20 +174,20 @@ export const it = {
       title: 'Contatti',
     },
     address: 'Via Panfilo Castaldi, 8\nMilano, 20124 MI',
-    email: 'info@pizzicostanzi.it',
-    phone: '+39 02 XXXXXXX',
-    copyright: '© 2024 Studio Pizzi & Costanzi. Tutti i diritti riservati.',
-    legal: 'P.IVA: XXXXXXXXXXXXXXX | Iscritti all\'Ordine dei Dottori Commercialisti di Milano',
+    email: 'info@cptax.it',
+    phone: '+39 02 63793485',
+    copyright: '© 2026 Studio Costanzi & Pizzi. Tutti i diritti riservati.',
+    legal: 'Iscritti all\'Ordine dei Commercialisti di Milano',
     privacyPolicy: 'Privacy Policy',
     cookiePolicy: 'Cookie Policy',
   },
   meta: {
-    title: 'Studio Pizzi & Costanzi | Commercialisti Milano dal 2002',
+    title: 'Studio Costanzi & Pizzi | Commercialisti Milano dal 2002',
     description:
-      'Studio Pizzi & Costanzi – Dottori Commercialisti a Milano dal 2002. Consulenza fiscale, societaria, revisione contabile e dichiarazioni fiscali. Via Panfilo Castaldi 8.',
+      'Studio Costanzi & Pizzi – Commercialisti a Milano dal 2002. Consulenza fiscale, societaria, revisione contabile e dichiarazioni fiscali. Via Panfilo Castaldi 8.',
     keywords:
-      'commercialista Milano, studio commercialista Milano, consulenza fiscale Milano, revisione contabile Milano, dichiarazioni fiscali Milano, Pizzi Costanzi',
-    ogTitle: 'Studio Pizzi & Costanzi – Commercialisti Milano',
+      'commercialista Milano, studio commercialista Milano, consulenza fiscale Milano, revisione contabile Milano, dichiarazioni fiscali Milano, Costanzi Pizzi',
+    ogTitle: 'Studio Costanzi & Pizzi – Commercialisti Milano',
     ogDescription:
       'Oltre 20 anni di esperienza nella consulenza fiscale, societaria e amministrativa a Milano. Professionisti al servizio di imprese, professionisti e privati.',
   },
