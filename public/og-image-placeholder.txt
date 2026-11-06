@@ -1,9 +1,0 @@
-Place your Open Graph image here as: og-image.jpg (1200x630px)
-
-Recommended: A professional photo of Milan (e.g. Milano Centrale, Piazza della Repubblica, or city skyline)
-with the Studio Costanzi & Pizzi branding overlay in deep red (#8B1E24).
-
-Tools to create it:
-- Canva: canva.com
-- Figma: figma.com
-- Adobe Express: adobe.com/express

@@ -64,21 +64,12 @@ export const metadata: Metadata = {
     title: 'Studio Costanzi & Pizzi – Commercialisti Milano dal 2002',
     description:
       'Oltre 20 anni di esperienza nella consulenza fiscale, societaria e amministrativa a Milano. Professionisti al servizio di imprese, professionisti e privati.',
-    images: [
-      {
-        url: '/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Studio Costanzi & Pizzi – Commercialisti Milano',
-      },
-    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Studio Costanzi & Pizzi – Commercialisti Milano',
     description:
       'Oltre 20 anni di esperienza nella consulenza fiscale e societaria a Milano.',
-    images: ['/og-image.jpg'],
   },
   alternates: {
     canonical: 'https://cptax.it',
@@ -94,7 +85,7 @@ const jsonLd = {
     'Studio professionale di commercialisti fondato nel 2002 da Giuseppe Costanzi e Mario Stefano Pizzi. Consulenza fiscale, societaria, revisione contabile e dichiarazioni fiscali a Milano.',
   url: 'https://cptax.it',
   logo: 'https://cptax.it/logo.svg',
-  image: 'https://cptax.it/og-image.jpg',
+  image: 'https://cptax.it/opengraph-image',
   telephone: '+39-02-63793485',
   email: 'info@cptax.it',
   foundingDate: '2002',
@@ -166,9 +157,6 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <meta name="theme-color" content="#8B1E24" />
       </head>
       <body className="font-sans antialiased">
