@@ -77,7 +77,7 @@ export default function Contact() {
 
   const labelClass = 'block text-[11px] font-bold tracking-[0.18em] uppercase text-charcoal/70 mb-2'
   const inputBase =
-    'w-full bg-white border rounded-sm px-4 py-3 text-charcoal text-sm placeholder-charcoal/50 focus:outline-none focus:border-primary transition-colors'
+    'w-full bg-white border rounded-sm px-4 py-3 text-charcoal text-base placeholder-charcoal/50 focus:outline-none focus:border-primary transition-colors'
   const inputBorder = (hasError: boolean) =>
     hasError ? 'border-red-500' : 'border-charcoal/35 hover:border-charcoal/50'
 

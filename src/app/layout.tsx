@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Playfair_Display, Inter } from 'next/font/google'
 import './globals.css'
 import { LanguageProvider } from '@/contexts/LanguageContext'
@@ -74,6 +74,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://cptax.it',
   },
+}
+
+export const viewport: Viewport = {
+  themeColor: '#0a0505',
 }
 
 const jsonLd = {
@@ -157,7 +161,6 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <meta name="theme-color" content="#8B1E24" />
       </head>
       <body className="font-sans antialiased">
         <MotionProvider>

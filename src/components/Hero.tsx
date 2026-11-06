@@ -18,7 +18,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col justify-center items-center overflow-hidden hero-bg"
+      className="relative min-h-[100svh] flex flex-col overflow-hidden hero-bg"
       aria-label="Hero section"
     >
       {/* ─── Decorative elements ─────────────────────────────────── */}
@@ -33,12 +33,12 @@ export default function Hero() {
 
       {/* Gold vertical accent line left */}
       <div
-        className="absolute left-[8%] top-1/2 -translate-y-1/2 w-px h-[260px] opacity-20"
+        className="hidden lg:block absolute left-[8%] top-1/2 -translate-y-1/2 w-px h-[260px] opacity-20"
         style={{ background: 'linear-gradient(to bottom, transparent, #D4B483, transparent)' }}
       />
       {/* Gold vertical accent line right */}
       <div
-        className="absolute right-[8%] top-1/2 -translate-y-1/2 w-px h-[260px] opacity-20"
+        className="hidden lg:block absolute right-[8%] top-1/2 -translate-y-1/2 w-px h-[260px] opacity-20"
         style={{ background: 'linear-gradient(to bottom, transparent, #D4B483, transparent)' }}
       />
 
@@ -46,15 +46,16 @@ export default function Hero() {
       <div className="absolute top-0 left-0 right-0 h-px bg-gold/20" />
 
       {/* ─── Main content ────────────────────────────────────────── */}
+      <div className="relative z-10 flex-1 flex items-center justify-center pt-28 pb-10 sm:pt-32">
       <motion.div
         initial={{ opacity: 0, y: 16 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-        className="relative z-10 max-w-5xl mx-auto px-5 sm:px-8 text-center"
+        className="max-w-5xl mx-auto px-5 sm:px-8 text-center"
       >
         <div className="w-12 h-[1px] bg-gold mx-auto mb-8" />
 
-        <p className="text-gold/90 text-[11px] sm:text-[12px] font-semibold tracking-[0.3em] uppercase mb-6">
+        <p className="text-gold/90 text-[11px] sm:text-[12px] font-semibold tracking-[0.18em] sm:tracking-[0.3em] uppercase mb-6 text-balance">
           {t.hero.eyebrow}
         </p>
 
@@ -84,17 +85,18 @@ export default function Hero() {
           </button>
         </div>
 
-        <div className="mt-14 flex items-center justify-center gap-6">
-          <div className="h-px w-16 bg-white/15" />
-          <span className="text-white/60 text-[11px] tracking-[0.25em] uppercase">
+        <div className="mt-10 sm:mt-14 flex items-center justify-center gap-4 sm:gap-6">
+          <div className="h-px w-8 sm:w-16 bg-white/15" />
+          <span className="text-white/60 text-[11px] tracking-[0.18em] sm:tracking-[0.25em] uppercase">
             {t.hero.founded}
           </span>
-          <div className="h-px w-16 bg-white/15" />
+          <div className="h-px w-8 sm:w-16 bg-white/15" />
         </div>
       </motion.div>
+      </div>
 
       {/* ─── Stats bar ───────────────────────────────────────────── */}
-      <div className="absolute bottom-20 left-0 right-0 z-10">
+      <div className="relative z-10 w-full pb-6 sm:pb-4">
         <div className="max-w-3xl mx-auto px-5 sm:px-8">
           <div className="border border-white/10 bg-white/5 rounded-sm grid grid-cols-3 divide-x divide-white/10">
             {t.hero.stats.map((stat) => (
@@ -114,7 +116,7 @@ export default function Hero() {
       {/* ─── Scroll indicator ────────────────────────────────────── */}
       <button
         onClick={() => scrollTo('#about')}
-        className="absolute bottom-5 left-1/2 -translate-x-1/2 text-white/60 hover:text-white/85 transition-colors flex flex-col items-center gap-1.5"
+        className="relative z-10 hidden sm:flex mx-auto mb-5 text-white/60 hover:text-white/85 transition-colors flex-col items-center gap-1.5 py-1"
         aria-label={t.hero.scrollLabel}
       >
         <span className="text-[11px] tracking-[0.25em] uppercase">{t.hero.scrollLabel}</span>

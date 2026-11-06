@@ -111,7 +111,7 @@ export default function Navbar() {
               aria-label={t.nav.backToTop}
             >
               <Logo size={40} />
-              <div className="text-left hidden sm:block">
+              <div className="text-left hidden sm:block whitespace-nowrap">
                 <div
                   className={`font-serif text-[13px] font-bold tracking-[0.12em] uppercase transition-colors duration-300 ${
                     scrolled ? 'text-charcoal' : 'text-white'
@@ -130,7 +130,7 @@ export default function Navbar() {
             </button>
 
             {/* ── Desktop nav ────────────────────────────────────── */}
-            <nav className="hidden lg:flex items-center gap-1" aria-label="Primary">
+            <nav className="hidden xl:flex items-center gap-1" aria-label="Primary">
               {navLinks.map((link) => {
                 const id = link.href.replace('#', '')
                 const isActive = activeSection === id
@@ -140,7 +140,7 @@ export default function Navbar() {
                     key={link.href}
                     onClick={() => scrollTo(link.href)}
                     aria-current={isActive ? 'page' : undefined}
-                    className={`relative px-4 py-2 text-sm font-medium tracking-wide rounded-md transition-colors duration-200 ${
+                    className={`relative px-4 py-2 text-sm font-medium tracking-wide rounded-md whitespace-nowrap transition-colors duration-200 ${
                       scrolled
                         ? isActive
                           ? 'text-primary'
@@ -167,7 +167,7 @@ export default function Navbar() {
             </nav>
 
             {/* ── Right side ─────────────────────────────────────── */}
-            <div className="hidden lg:flex items-center gap-4">
+            <div className="hidden xl:flex items-center gap-4">
               {/* Language switcher */}
               <div
                 className={`flex items-center text-[12px] font-semibold tracking-wider border rounded-sm overflow-hidden transition-colors duration-300 ${
@@ -214,7 +214,7 @@ export default function Navbar() {
 
             {/* ── Mobile hamburger ───────────────────────────────── */}
             <button
-              className={`lg:hidden p-2.5 rounded-md transition-colors duration-200 ${
+              className={`xl:hidden p-2.5 rounded-md transition-colors duration-200 ${
                 scrolled
                   ? 'text-charcoal hover:bg-gray-100'
                   : 'text-white hover:bg-white/10'
@@ -237,7 +237,7 @@ export default function Navbar() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="fixed inset-0 bg-black/50 z-40 lg:hidden"
+              className="fixed inset-0 bg-black/50 z-40 xl:hidden"
               onClick={() => setMenuOpen(false)}
             />
             <motion.div
@@ -245,7 +245,7 @@ export default function Navbar() {
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
               transition={{ type: 'spring', damping: 28, stiffness: 300 }}
-              className="fixed top-0 right-0 bottom-0 w-[280px] bg-white z-50 lg:hidden shadow-2xl"
+              className="fixed top-0 right-0 bottom-0 w-[280px] bg-white z-50 xl:hidden shadow-2xl"
             >
               <div className="flex flex-col h-full">
                 <div className="flex items-center justify-between px-6 py-5 border-b border-gray-100">

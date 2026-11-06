@@ -17,6 +17,8 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -73,6 +75,15 @@ body {
       rgba(255, 255, 255, 0.018) 79px,
       rgba(255, 255, 255, 0.018) 80px
     );
+}
+
+button, a, [role="button"] {
+  touch-action: manipulation;
+}
+
+button {
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 /* Focus styles for accessibility */
