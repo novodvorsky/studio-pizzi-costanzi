@@ -9,7 +9,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/api/', '/_next/'],
       },
     ],
-    sitemap: 'https://www.pizzicostanzi.it/sitemap.xml',
-    host: 'https://www.pizzicostanzi.it',
+    sitemap: 'https://cptax.it/sitemap.xml',
+    host: 'https://cptax.it',
   }
 }

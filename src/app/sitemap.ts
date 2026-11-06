@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.pizzicostanzi.it'
+  const baseUrl = 'https://cptax.it'
 
   return [
     {

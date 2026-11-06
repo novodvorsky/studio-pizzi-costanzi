@@ -19,7 +19,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.pizzicostanzi.it'),
+  metadataBase: new URL('https://cptax.it'),
   title: {
     default: 'Studio Costanzi & Pizzi | Commercialisti Milano dal 2002',
     template: '%s | Studio Costanzi & Pizzi',
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'it_IT',
     alternateLocale: 'en_GB',
-    url: 'https://www.pizzicostanzi.it',
+    url: 'https://cptax.it',
     siteName: 'Studio Costanzi & Pizzi',
     title: 'Studio Costanzi & Pizzi – Commercialisti Milano dal 2002',
     description:
@@ -81,11 +81,7 @@ export const metadata: Metadata = {
     images: ['/og-image.jpg'],
   },
   alternates: {
-    canonical: 'https://www.pizzicostanzi.it',
-    languages: {
-      'it-IT': 'https://www.pizzicostanzi.it',
-      'en-GB': 'https://www.pizzicostanzi.it/en',
-    },
+    canonical: 'https://cptax.it',
   },
 }
 
@@ -96,9 +92,9 @@ const jsonLd = {
   alternateName: 'Costanzi & Pizzi Commercialisti',
   description:
     'Studio professionale di commercialisti fondato nel 2002 da Giuseppe Costanzi e Mario Stefano Pizzi. Consulenza fiscale, societaria, revisione contabile e dichiarazioni fiscali a Milano.',
-  url: 'https://www.pizzicostanzi.it',
-  logo: 'https://www.pizzicostanzi.it/logo.svg',
-  image: 'https://www.pizzicostanzi.it/og-image.jpg',
+  url: 'https://cptax.it',
+  logo: 'https://cptax.it/logo.svg',
+  image: 'https://cptax.it/og-image.jpg',
   telephone: '+39-02-63793485',
   email: 'info@cptax.it',
   foundingDate: '2002',
