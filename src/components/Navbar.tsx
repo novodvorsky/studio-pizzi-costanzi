@@ -73,16 +73,12 @@ export default function Navbar() {
 
   return (
     <>
-      <motion.nav
-        initial={{ y: -100, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-[background-color,backdrop-filter,box-shadow,border-color] duration-500 ${
+      <nav
+        className={`fixed top-0 left-0 right-0 z-50 transition-[background-color,backdrop-filter,box-shadow,border-color] duration-200 ${
           scrolled
             ? 'bg-white/85 backdrop-blur-xl shadow-[0_1px_32px_rgba(0,0,0,0.1)] border-b border-white/60'
             : 'bg-transparent'
         }`}
-        role="navigation"
         aria-label="Main navigation"
       >
         {/*
@@ -93,7 +89,7 @@ export default function Navbar() {
         */}
         <div
           aria-hidden="true"
-          className={`absolute inset-0 pointer-events-none transition-opacity duration-500 ${
+          className={`absolute inset-0 pointer-events-none transition-opacity duration-200 ${
             scrolled ? 'opacity-0' : 'opacity-100'
           }`}
           style={{
@@ -104,7 +100,7 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           {/* Height shrinks from 80 → 64 px on scroll */}
           <div
-            className={`flex items-center justify-between transition-[height] duration-500 ease-out ${
+            className={`flex items-center justify-between transition-[height] duration-200 ease-out ${
               scrolled ? 'h-16' : 'h-20'
             }`}
           >
@@ -112,15 +108,9 @@ export default function Navbar() {
             <button
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
               className="flex items-center gap-3 group"
-              aria-label="Torna all'inizio"
+              aria-label={t.nav.backToTop}
             >
-              <div
-                className={`transition-transform duration-500 origin-left ${
-                  scrolled ? 'scale-90' : 'scale-100'
-                }`}
-              >
-                <Logo size={40} />
-              </div>
+              <Logo size={40} />
               <div className="text-left hidden sm:block">
                 <div
                   className={`font-serif text-[13px] font-bold tracking-[0.12em] uppercase transition-colors duration-300 ${
@@ -130,8 +120,8 @@ export default function Navbar() {
                   Studio Costanzi & Pizzi
                 </div>
                 <div
-                  className={`text-[10px] tracking-[0.1em] font-light transition-colors duration-300 ${
-                    scrolled ? 'text-charcoal/60' : 'text-white/60'
+                  className={`text-[11px] tracking-[0.1em] transition-colors duration-200 ${
+                    scrolled ? 'text-charcoal/70' : 'text-white/75'
                   }`}
                 >
                   Commercialisti
@@ -224,20 +214,20 @@ export default function Navbar() {
 
             {/* ── Mobile hamburger ───────────────────────────────── */}
             <button
-              className={`lg:hidden p-2 rounded-md transition-colors duration-200 ${
+              className={`lg:hidden p-2.5 rounded-md transition-colors duration-200 ${
                 scrolled
                   ? 'text-charcoal hover:bg-gray-100'
                   : 'text-white hover:bg-white/10'
               }`}
               onClick={() => setMenuOpen(!menuOpen)}
-              aria-label={menuOpen ? 'Chiudi menu' : 'Apri menu'}
+              aria-label={menuOpen ? t.nav.closeMenu : t.nav.openMenu}
               aria-expanded={menuOpen}
             >
-              {menuOpen ? <X size={22} /> : <Menu size={22} />}
+              {menuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
         </div>
-      </motion.nav>
+      </nav>
 
       {/* ── Mobile drawer ──────────────────────────────────────────── */}
       <AnimatePresence>
@@ -262,10 +252,10 @@ export default function Navbar() {
                   <Logo size={36} />
                   <button
                     onClick={() => setMenuOpen(false)}
-                    className="text-charcoal p-1"
-                    aria-label="Chiudi menu"
+                    className="text-charcoal p-2.5 -mr-2.5 rounded-md hover:bg-gray-100"
+                    aria-label={t.nav.closeMenu}
                   >
-                    <X size={20} />
+                    <X size={24} />
                   </button>
                 </div>
 
@@ -279,7 +269,7 @@ export default function Navbar() {
                         key={link.href}
                         initial={{ opacity: 0, x: 20 }}
                         animate={{ opacity: 1, x: 0 }}
-                        transition={{ delay: i * 0.05 }}
+                        transition={{ delay: i * 0.03 }}
                         onClick={() => scrollTo(link.href)}
                         className={`flex items-center w-full text-left py-3 px-3 rounded-md font-medium text-[15px] transition-colors ${
                           isActive

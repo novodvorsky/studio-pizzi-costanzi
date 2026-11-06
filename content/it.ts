@@ -1,5 +1,8 @@
 export const it = {
   nav: {
+    openMenu: 'Apri menu',
+    closeMenu: 'Chiudi menu',
+    backToTop: "Torna all'inizio",
     about: 'Chi Siamo',
     services: 'Servizi',
     whyUs: 'Perché Noi',
@@ -8,6 +11,12 @@ export const it = {
     cta: 'Richiedi Consulenza',
   },
   hero: {
+    founded: 'Fondato nel 2002 · Milano',
+    stats: [
+      { value: '20+', label: 'Anni' },
+      { value: '500+', label: 'Clienti' },
+      { value: '2002', label: 'Fondazione' },
+    ],
     eyebrow: 'Studio Costanzi & Pizzi — Commercialisti',
     title: 'Consulenza fiscale, societaria e amministrativa dal 2002',
     subtitle: 'Oltre vent\'anni di esperienza al servizio di imprese, professionisti e privati.',
@@ -16,6 +25,8 @@ export const it = {
     scrollLabel: 'Scorri per scoprire',
   },
   about: {
+    quote:
+      'La nostra missione è costruire relazioni professionali durature, basate sulla competenza, la riservatezza e la fiducia reciproca.',
     eyebrow: 'La Nostra Storia',
     title: 'Chi Siamo',
     description:
@@ -39,6 +50,8 @@ export const it = {
     ],
   },
   services: {
+    ctaPrompt: 'Hai bisogno di una consulenza personalizzata?',
+    ctaButton: 'Contattaci',
     eyebrow: 'Cosa Facciamo',
     title: 'I Nostri Servizi',
     subtitle:
@@ -71,6 +84,7 @@ export const it = {
     ],
   },
   whyUs: {
+    trust: ['Ordine dei Commercialisti di Milano', 'Fondato nel 2002', 'Via Panfilo Castaldi 8, Milano'],
     eyebrow: 'Il Nostro Impegno',
     title: 'Perché Scegliere Noi',
     subtitle:
@@ -103,6 +117,13 @@ export const it = {
     ],
   },
   location: {
+    cardSubtitle: 'Commercialisti',
+    addressLabel: 'Indirizzo',
+    emailLabel: 'Email',
+    phoneLabel: 'Telefono',
+    directionsLabel: 'Come raggiungerci',
+    directionsCta: 'Ottieni indicazioni',
+    mapTitle: 'Mappa Studio Costanzi & Pizzi – Via Panfilo Castaldi 8, Milano',
     eyebrow: 'La Nostra Sede',
     title: 'Dove Siamo',
     address: {
@@ -126,6 +147,10 @@ export const it = {
     directions: 'Facilmente raggiungibile con MM2 Gioia e MM3 Repubblica.',
   },
   contact: {
+    cardTitle: 'Siamo qui per voi',
+    cardText: 'Contattateci per una consulenza o per ulteriori informazioni sui nostri servizi.',
+    sentTitle: 'Quasi fatto',
+    sendAnother: 'Scrivi un altro messaggio',
     eyebrow: 'Scriveteci',
     title: 'Contattaci',
     subtitle:
@@ -142,7 +167,7 @@ export const it = {
       submit: 'Invia Messaggio',
       submitting: 'Invio in corso...',
       success:
-        'Messaggio inviato con successo. Vi contatteremo al più presto.',
+        'Si è aperto il vostro programma di posta con il messaggio già compilato: premete Invia per completare. Se non si è aperto, scriveteci a info@cptax.it.',
       error: 'Si è verificato un errore. Vi preghiamo di riprovare.',
       required: 'Campo obbligatorio',
       invalidEmail: 'Inserire un indirizzo email valido',
@@ -159,6 +184,10 @@ export const it = {
       'Inviando questo modulo accetti la nostra Informativa sulla Privacy.',
   },
   footer: {
+    officeLabel: 'Sede',
+    hoursLabel: 'Orari',
+    hours: 'Lun – Ven: 9:00–13:00 / 14:00–18:00',
+    hoursNote: 'Su appuntamento',
     tagline: 'Consulenza fiscale e societaria di eccellenza dal 2002.',
     links: {
       title: 'Navigazione',

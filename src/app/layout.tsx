@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Playfair_Display, Inter } from 'next/font/google'
 import './globals.css'
 import { LanguageProvider } from '@/contexts/LanguageContext'
+import MotionProvider from '@/components/MotionProvider'
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -38,8 +39,8 @@ export const metadata: Metadata = {
     'fiscalista Milano',
   ],
   authors: [
-    { name: 'Mario Stefano Pizzi' },
     { name: 'Giuseppe Costanzi' },
+    { name: 'Mario Stefano Pizzi' },
   ],
   creator: 'Studio Costanzi & Pizzi',
   publisher: 'Studio Costanzi & Pizzi',
@@ -86,9 +87,6 @@ export const metadata: Metadata = {
       'en-GB': 'https://www.pizzicostanzi.it/en',
     },
   },
-  verification: {
-    google: 'YOUR_GOOGLE_VERIFICATION_CODE',
-  },
 }
 
 const jsonLd = {
@@ -97,18 +95,18 @@ const jsonLd = {
   name: 'Studio Costanzi & Pizzi',
   alternateName: 'Costanzi & Pizzi Commercialisti',
   description:
-    'Studio professionale di commercialisti fondato nel 2002 da Mario Stefano Pizzi e Giuseppe Costanzi. Consulenza fiscale, societaria, revisione contabile e dichiarazioni fiscali a Milano.',
+    'Studio professionale di commercialisti fondato nel 2002 da Giuseppe Costanzi e Mario Stefano Pizzi. Consulenza fiscale, societaria, revisione contabile e dichiarazioni fiscali a Milano.',
   url: 'https://www.pizzicostanzi.it',
   logo: 'https://www.pizzicostanzi.it/logo.svg',
   image: 'https://www.pizzicostanzi.it/og-image.jpg',
-  telephone: '+39-02-XXXXXXX',
-  email: 'info@pizzicostanzi.it',
+  telephone: '+39-02-63793485',
+  email: 'info@cptax.it',
   foundingDate: '2002',
   founders: [
     {
       '@type': 'Person',
       name: 'Mario Stefano Pizzi',
-      jobTitle: 'Dottore Commercialista',
+      jobTitle: 'Ragioniere Commercialista',
     },
     {
       '@type': 'Person',
@@ -178,9 +176,11 @@ export default function RootLayout({
         <meta name="theme-color" content="#8B1E24" />
       </head>
       <body className="font-sans antialiased">
-        <LanguageProvider>
-          {children}
-        </LanguageProvider>
+        <MotionProvider>
+          <LanguageProvider>
+            {children}
+          </LanguageProvider>
+        </MotionProvider>
       </body>
     </html>
   )

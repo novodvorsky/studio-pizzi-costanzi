@@ -2,6 +2,9 @@ import type { Translations } from './it'
 
 export const en: Translations = {
   nav: {
+    openMenu: 'Open menu',
+    closeMenu: 'Close menu',
+    backToTop: 'Back to top',
     about: 'About Us',
     services: 'Services',
     whyUs: 'Why Us',
@@ -10,6 +13,12 @@ export const en: Translations = {
     cta: 'Request Consultation',
   },
   hero: {
+    founded: 'Founded in 2002 · Milan',
+    stats: [
+      { value: '20+', label: 'Years' },
+      { value: '500+', label: 'Clients' },
+      { value: '2002', label: 'Founded' },
+    ],
     eyebrow: 'Studio Costanzi & Pizzi — Commercialisti',
     title: 'Tax, Corporate & Administrative Advisory Since 2002',
     subtitle: 'Over twenty years of experience serving businesses, professionals, and individuals.',
@@ -18,6 +27,8 @@ export const en: Translations = {
     scrollLabel: 'Scroll to discover',
   },
   about: {
+    quote:
+      'Our mission is to build lasting professional relationships grounded in expertise, confidentiality, and mutual trust.',
     eyebrow: 'Our Story',
     title: 'About Us',
     description:
@@ -41,6 +52,8 @@ export const en: Translations = {
     ],
   },
   services: {
+    ctaPrompt: 'Need tailored advice?',
+    ctaButton: 'Contact us',
     eyebrow: 'What We Do',
     title: 'Our Services',
     subtitle:
@@ -73,6 +86,7 @@ export const en: Translations = {
     ],
   },
   whyUs: {
+    trust: ['Order of Commercialisti of Milan', 'Founded in 2002', 'Via Panfilo Castaldi 8, Milan'],
     eyebrow: 'Our Commitment',
     title: 'Why Choose Us',
     subtitle:
@@ -105,6 +119,13 @@ export const en: Translations = {
     ],
   },
   location: {
+    cardSubtitle: 'Commercialisti',
+    addressLabel: 'Address',
+    emailLabel: 'Email',
+    phoneLabel: 'Phone',
+    directionsLabel: 'Getting here',
+    directionsCta: 'Get directions',
+    mapTitle: 'Map of Studio Costanzi & Pizzi – Via Panfilo Castaldi 8, Milan',
     eyebrow: 'Our Office',
     title: 'Where to Find Us',
     address: {
@@ -128,6 +149,10 @@ export const en: Translations = {
     directions: 'Easily accessible via Metro lines MM2 Gioia and MM3 Repubblica.',
   },
   contact: {
+    cardTitle: "We're here for you",
+    cardText: 'Get in touch for a consultation or for more information about our services.',
+    sentTitle: 'Almost done',
+    sendAnother: 'Write another message',
     eyebrow: 'Get in Touch',
     title: 'Contact Us',
     subtitle:
@@ -144,7 +169,7 @@ export const en: Translations = {
       submit: 'Send Message',
       submitting: 'Sending...',
       success:
-        'Message sent successfully. We will contact you as soon as possible.',
+        'Your email app has opened with the message filled in: press Send to finish. If it did not open, write to us at info@cptax.it.',
       error: 'An error occurred. Please try again.',
       required: 'Required field',
       invalidEmail: 'Please enter a valid email address',
@@ -160,6 +185,10 @@ export const en: Translations = {
     privacy: 'By submitting this form you agree to our Privacy Policy.',
   },
   footer: {
+    officeLabel: 'Office',
+    hoursLabel: 'Hours',
+    hours: 'Mon – Fri: 9:00–13:00 / 14:00–18:00',
+    hoursNote: 'By appointment',
     tagline: 'Excellence in tax and corporate advisory since 2002.',
     links: {
       title: 'Navigation',
