@@ -2,6 +2,7 @@
 
 import { MapPin, Clock, Mail, Phone, Train } from 'lucide-react'
 import { useLanguage } from '@/contexts/LanguageContext'
+import MapEmbed from './MapEmbed'
 
 export default function Location() {
   const { t } = useLanguage()
@@ -43,18 +44,9 @@ export default function Location() {
         {/* Two-column: Map + Info */}
         <div className="grid lg:grid-cols-[1fr_380px] gap-8 items-stretch">
 
-          {/* Map embed */}
+          {/* Map: Google content loads only after the visitor opts in */}
           <div className="rounded-sm overflow-hidden shadow-luxury min-h-[380px] lg:min-h-[460px] bg-gray-100">
-            <iframe
-              src="https://maps.google.com/maps?q=Via+Panfilo+Castaldi+8+Milano+MI+20124&output=embed&z=16&hl=it"
-              width="100%"
-              height="100%"
-              style={{ border: 0, display: 'block', minHeight: '380px' }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title={loc.mapTitle}
-            />
+            <MapEmbed />
           </div>
 
           {/* Info card */}

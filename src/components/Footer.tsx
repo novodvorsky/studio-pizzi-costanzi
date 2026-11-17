@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import { useLanguage } from '@/contexts/LanguageContext'
 import Logo from './Logo'
 import { Mail, Phone, MapPin, ArrowUp } from 'lucide-react'
@@ -7,12 +8,16 @@ import { Mail, Phone, MapPin, ArrowUp } from 'lucide-react'
 export default function Footer() {
   const { t } = useLanguage()
   const f = t.footer
+  const firm = t.firm
+  const registrations = firm.registrations.filter((r) => r.number.trim())
 
   const scrollTo = (href: string) => {
     const el = document.querySelector(href)
     if (el) {
       const top = el.getBoundingClientRect().top + window.scrollY - 80
       window.scrollTo({ top, behavior: 'smooth' })
+    } else {
+      window.location.href = `/${href}`
     }
   }
 
@@ -114,14 +119,47 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 py-5">
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
-            <div className="flex flex-col sm:flex-row items-center gap-3 text-center sm:text-left">
-              <p className="text-white/60 text-[12px] tracking-wide">{f.copyright}</p>
-              <span aria-hidden="true" className="hidden sm:block text-white/30">·</span>
-              <p className="text-white/60 text-[12px] tracking-wide">{f.legal}</p>
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div className="space-y-1 text-center md:text-left text-white/60 text-[12px] tracking-wide leading-relaxed">
+              <p>{f.copyright}</p>
+              {(firm.vatNumber.trim() || firm.pec.trim()) && (
+                <p>
+                  {firm.vatNumber.trim() && <span>{firm.labels.vat} {firm.vatNumber}</span>}
+                  {firm.vatNumber.trim() && firm.pec.trim() && <span aria-hidden="true"> · </span>}
+                  {firm.pec.trim() && (
+                    <span>
+                      {firm.labels.pec}{' '}
+                      <a href={`mailto:${firm.pec}`} className="hover:text-white transition-colors">
+                        {firm.pec}
+                      </a>
+                    </span>
+                  )}
+                </p>
+              )}
+              <p>
+                {firm.labels.registeredWith}
+                {firm.register}
+                {registrations.length > 0 && (
+                  <>
+                    {': '}
+                    {registrations.map((r, i) => (
+                      <span key={r.name}>
+                        {i > 0 && ', '}
+                        {r.name} {firm.labels.registerNumber} {r.number}
+                      </span>
+                    ))}
+                  </>
+                )}
+              </p>
             </div>
 
-            <div className="flex items-center gap-5">
+            <div className="flex items-center justify-center gap-5">
+              <Link href="/privacy" className="text-white/65 hover:text-white text-[12px] tracking-wide transition-colors py-2">
+                {f.privacyPolicy}
+              </Link>
+              <Link href="/cookie" className="text-white/65 hover:text-white text-[12px] tracking-wide transition-colors py-2">
+                {f.cookiePolicy}
+              </Link>
               <button
                 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                 className="w-11 h-11 bg-white/8 hover:bg-primary rounded-sm flex items-center justify-center transition-colors duration-150"

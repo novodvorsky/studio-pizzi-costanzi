@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { MapPin, Mail, Phone, Send, CheckCircle, AlertCircle } from 'lucide-react'
 import { useLanguage } from '@/contexts/LanguageContext'
@@ -160,7 +161,13 @@ export default function Contact() {
 
             {/* Privacy note */}
             <div className="bg-secondary rounded-sm p-5">
-              <p className="text-charcoal/70 text-xs leading-relaxed">{c.privacy}</p>
+              <p className="text-charcoal/70 text-xs leading-relaxed">
+                {c.privacy.before}
+                <Link href="/privacy" className="text-primary font-medium underline underline-offset-2">
+                  {c.privacy.link}
+                </Link>
+                {c.privacy.after}
+              </p>
             </div>
           </div>
 

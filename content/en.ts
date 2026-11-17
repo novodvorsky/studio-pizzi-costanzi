@@ -147,6 +147,12 @@ export const en: Translations = {
       phone: '+39 02 63793485',
     },
     directions: 'Easily accessible via Metro lines MM2 Gioia and MM3 Repubblica.',
+    map: {
+      title: 'Google map',
+      note: 'The map is provided by Google: if you load it, Google receives browsing data and may set cookies.',
+      cookieLink: 'Cookie Policy',
+      button: 'Show map',
+    },
   },
   contact: {
     cardTitle: "We're here for you",
@@ -182,7 +188,11 @@ export const en: Translations = {
       emailLabel: 'Email',
       phoneLabel: 'Phone',
     },
-    privacy: 'By submitting this form you agree to our Privacy Policy.',
+    privacy: {
+      before: 'Before writing to us, read how we handle your data in our ',
+      link: 'Privacy Policy',
+      after: '.',
+    },
   },
   footer: {
     officeLabel: 'Office',
@@ -207,9 +217,157 @@ export const en: Translations = {
     email: 'info@cptax.it',
     phone: '+39 02 63793485',
     copyright: '© 2026 Studio Costanzi & Pizzi. All rights reserved.',
-    legal: 'Registered with the Order of Commercialisti of Milan',
     privacyPolicy: 'Privacy Policy',
     cookiePolicy: 'Cookie Policy',
+  },
+  // Dati obbligatori dello Studio: da compilare. Ogni riga compare nel footer solo quando è valorizzata.
+  firm: {
+    vatNumber: '',
+    pec: '',
+    register: 'Ordine dei Dottori Commercialisti e degli Esperti Contabili di Milano',
+    registrations: [
+      {
+        name: 'Dott. Giuseppe Costanzi',
+        number: '',
+      },
+      {
+        name: 'Rag. Mario Stefano Pizzi',
+        number: '',
+      },
+    ],
+    labels: {
+      vat: 'VAT no.',
+      pec: 'PEC (certified email)',
+      registeredWith: 'Registered with the ',
+      registerNumber: 'no.',
+    },
+  },
+  legalPages: {
+    updated: 'Last updated: 17 November 2026',
+    back: 'Back to the site',
+    privacy: {
+      title: 'Privacy Policy',
+      intro: 'Under Article 13 of Regulation (EU) 2016/679 (GDPR), this notice explains how we process the personal data of people who visit cptax.it and of people who contact us.',
+      controllerHeading: '1. Data controller',
+      controllerIntro: 'The data controller is:',
+      sections: [
+        {
+          heading: '2. What data we process',
+          paragraphs: [
+          ],
+          list: [
+            'Browsing data: when you visit the site, the hosting provider automatically logs technical data such as IP address, date and time, requested page and browser type. The site uses no analytics, profiling or marketing tools.',
+            'Data you send us: the contact form does not send data to any server of ours. Pressing “Send Message” opens your email app with a pre-filled message (name, email, phone if given, text). We only receive the data if you send that email to info@cptax.it yourself. The same applies if you email or call us directly.',
+            'Data collected by Google Maps: only if you choose to load the map. See the Cookie Policy.',
+          ],
+          after: [
+          ],
+        },
+        {
+          heading: '3. Why we process it and on what legal basis',
+          paragraphs: [
+          ],
+          list: [
+            'Replying to your enquiries and, if you ask, preparing a quote or an engagement: steps taken at your request before entering into a contract (Art. 6(1)(b) GDPR).',
+            'Replying to general requests for information: the firm\'s legitimate interest in following up on people who contact it (Art. 6(1)(f) GDPR).',
+            'Keeping the site working and secure (browsing data): legitimate interest (Art. 6(1)(f) GDPR).',
+          ],
+          after: [
+            'Providing your data is optional, but without contact details we cannot reply. We do not use your data to send you advertising and we make no decisions based solely on automated processing.',
+          ],
+        },
+        {
+          heading: '4. How long we keep it',
+          paragraphs: [
+          ],
+          list: [
+            'Emails we receive are kept for as long as needed to handle the enquiry. If no engagement follows, we delete them within 12 months of the last contact. If an engagement follows, the data becomes part of the records of the professional relationship and is kept for the periods required by law.',
+            'Browsing data is kept by the hosting provider for a limited period, under its terms of service.',
+          ],
+          after: [
+          ],
+        },
+        {
+          heading: '5. Who may receive it',
+          paragraphs: [
+          ],
+          list: [
+            'The firm\'s email service provider, which stores emails on our behalf as a data processor.',
+            'Vercel Inc. (United States), which hosts the site and logs browsing data. Transfers to the United States rely on the safeguards provided by the GDPR (EU-U.S. Data Privacy Framework or the European Commission\'s standard contractual clauses).',
+            'Google Ireland Limited and Google LLC, only if you choose to load the map.',
+          ],
+          after: [
+            'Your data is not published or sold. It may be disclosed to authorities only where the law requires it.',
+          ],
+        },
+        {
+          heading: '6. Your rights',
+          paragraphs: [
+            'At any time you can ask to access, correct or erase your data, restrict its processing, object to processing based on legitimate interest, and receive the data you gave us in a structured format (Articles 15–22 GDPR). To do so, write to info@cptax.it.',
+            'If you believe the processing breaches the GDPR, you can lodge a complaint with the Italian Data Protection Authority, the Garante per la protezione dei dati personali (www.garanteprivacy.it).',
+          ],
+          list: [
+          ],
+          after: [
+          ],
+        },
+      ],
+    },
+    cookie: {
+      title: 'Cookie Policy',
+      intro: 'This page explains what storage the cptax.it site uses, following the Italian Data Protection Authority\'s cookie guidelines (10 June 2021).',
+      sections: [
+        {
+          heading: '1. No profiling or analytics cookies',
+          paragraphs: [
+            'The site sets no profiling, analytics or marketing cookies and uses no third-party tracking tools.',
+          ],
+          list: [
+          ],
+          after: [
+          ],
+        },
+        {
+          heading: '2. Technical storage',
+          paragraphs: [
+            'To work, the site saves two technical values in your browser (localStorage). They are not sent to us or to anyone else:',
+          ],
+          list: [
+            'spc-lang: the language you chose (Italian or English).',
+            'spc-map-consent: whether you chose to show the Google map.',
+          ],
+          after: [
+            'They are strictly necessary to provide the service you ask for, so they do not require consent.',
+          ],
+        },
+        {
+          heading: '3. Google Maps',
+          paragraphs: [
+            'The map in the “Location” section is Google content and is not loaded until you press “Show map”. Only from that moment does Google receive browsing data, such as your IP address, and it may set its own cookies under its policy (policies.google.com/technologies/cookies).',
+            'Without loading the map you can still use the “Get directions” link, which opens Google Maps in a new tab.',
+          ],
+          list: [
+          ],
+          after: [
+          ],
+        },
+        {
+          heading: '4. How to withdraw your choice',
+          paragraphs: [
+            'You can withdraw your choice to show the map at any time with the button below. You can also clear the data saved by the site and Google\'s cookies in your browser settings.',
+          ],
+          list: [
+          ],
+          after: [
+          ],
+        },
+      ],
+      revoke: {
+        button: 'Withdraw consent to the map',
+        done: 'Done: the map will not load until you press “Show map” again.',
+        notSet: 'The map is not active at the moment: there is nothing to withdraw.',
+      },
+    },
   },
   meta: {
     title: 'Studio Costanzi & Pizzi | Commercialisti Milan Since 2002',

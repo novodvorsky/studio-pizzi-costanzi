@@ -54,6 +54,14 @@ export default function Navbar() {
     return () => observer.disconnect()
   }, [])
 
+  // Arriving from another page (e.g. /privacy → /#about): land below the fixed navbar.
+  useEffect(() => {
+    const el = window.location.hash ? document.getElementById(window.location.hash.slice(1)) : null
+    if (el) {
+      window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 80 })
+    }
+  }, [])
+
   const scrollTo = useCallback((href: string) => {
     const el = document.querySelector(href)
     if (el) {

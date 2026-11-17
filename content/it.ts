@@ -145,6 +145,12 @@ export const it = {
       phone: '+39 02 63793485',
     },
     directions: 'Facilmente raggiungibile con MM2 Gioia e MM3 Repubblica.',
+    map: {
+      title: 'Mappa di Google',
+      note: 'La mappa è fornita da Google: caricandola, Google riceve dati di navigazione e può impostare cookie.',
+      cookieLink: 'Cookie Policy',
+      button: 'Mostra mappa',
+    },
   },
   contact: {
     cardTitle: 'Siamo qui per voi',
@@ -180,8 +186,11 @@ export const it = {
       emailLabel: 'Email',
       phoneLabel: 'Telefono',
     },
-    privacy:
-      'Inviando questo modulo accetti la nostra Informativa sulla Privacy.',
+    privacy: {
+      before: 'Prima di scriverci, leggi come trattiamo i tuoi dati nell\'',
+      link: 'Informativa sulla Privacy',
+      after: '.',
+    },
   },
   footer: {
     officeLabel: 'Sede',
@@ -206,9 +215,157 @@ export const it = {
     email: 'info@cptax.it',
     phone: '+39 02 63793485',
     copyright: '© 2026 Studio Costanzi & Pizzi. Tutti i diritti riservati.',
-    legal: 'Iscritti all\'Ordine dei Commercialisti di Milano',
     privacyPolicy: 'Privacy Policy',
     cookiePolicy: 'Cookie Policy',
+  },
+  // Dati obbligatori dello Studio: da compilare. Ogni riga compare nel footer solo quando è valorizzata.
+  firm: {
+    vatNumber: '',
+    pec: '',
+    register: 'Ordine dei Dottori Commercialisti e degli Esperti Contabili di Milano',
+    registrations: [
+      {
+        name: 'Dott. Giuseppe Costanzi',
+        number: '',
+      },
+      {
+        name: 'Rag. Mario Stefano Pizzi',
+        number: '',
+      },
+    ],
+    labels: {
+      vat: 'P.IVA',
+      pec: 'PEC',
+      registeredWith: 'Iscritti all\'',
+      registerNumber: 'n.',
+    },
+  },
+  legalPages: {
+    updated: 'Ultimo aggiornamento: 17 novembre 2026',
+    back: 'Torna al sito',
+    privacy: {
+      title: 'Informativa sulla Privacy',
+      intro: 'Questa informativa spiega, ai sensi dell\'art. 13 del Regolamento (UE) 2016/679 (GDPR), come trattiamo i dati personali di chi visita il sito cptax.it e di chi ci contatta.',
+      controllerHeading: '1. Titolare del trattamento',
+      controllerIntro: 'Il titolare del trattamento è:',
+      sections: [
+        {
+          heading: '2. Quali dati trattiamo',
+          paragraphs: [
+          ],
+          list: [
+            'Dati di navigazione: quando visiti il sito, il fornitore di hosting registra automaticamente dati tecnici come indirizzo IP, data e ora, pagina richiesta e tipo di browser. Il sito non usa strumenti di statistica, di profilazione o di marketing.',
+            'Dati che ci invii: il modulo di contatto non invia dati a un nostro server. Premendo «Invia messaggio» si apre il tuo programma di posta con un messaggio già compilato (nome, email, telefono se indicato, testo). I dati ci arrivano solo se invii tu quell\'email a info@cptax.it. Lo stesso vale se ci scrivi o ci telefoni direttamente.',
+            'Dati raccolti da Google Maps: solo se scegli di caricare la mappa. Vedi la Cookie Policy.',
+          ],
+          after: [
+          ],
+        },
+        {
+          heading: '3. Perché li trattiamo e su quale base giuridica',
+          paragraphs: [
+          ],
+          list: [
+            'Rispondere alle tue richieste e, se lo chiedi, preparare un preventivo o un incarico: misure precontrattuali adottate su tua richiesta (art. 6, par. 1, lett. b GDPR).',
+            'Rispondere a richieste generiche di informazioni: legittimo interesse dello Studio a dare seguito a chi lo contatta (art. 6, par. 1, lett. f GDPR).',
+            'Garantire il funzionamento e la sicurezza del sito (dati di navigazione): legittimo interesse (art. 6, par. 1, lett. f GDPR).',
+          ],
+          after: [
+            'Fornire i dati è facoltativo, ma senza un recapito non possiamo risponderti. Non usiamo i tuoi dati per inviarti pubblicità e non prendiamo decisioni basate unicamente su trattamenti automatizzati.',
+          ],
+        },
+        {
+          heading: '4. Per quanto tempo li conserviamo',
+          paragraphs: [
+          ],
+          list: [
+            'Le email ricevute sono conservate per il tempo necessario a gestire la richiesta. Se non ne nasce un incarico, le cancelliamo entro 12 mesi dall\'ultimo contatto. Se nasce un incarico, i dati entrano a far parte della documentazione del rapporto professionale e sono conservati per i tempi previsti dalla legge.',
+            'I dati di navigazione sono conservati dal fornitore di hosting per un periodo limitato, secondo le sue condizioni di servizio.',
+          ],
+          after: [
+          ],
+        },
+        {
+          heading: '5. A chi possono essere comunicati',
+          paragraphs: [
+          ],
+          list: [
+            'Il fornitore del servizio di posta elettronica dello Studio, che conserva le email per nostro conto come responsabile del trattamento.',
+            'Vercel Inc. (Stati Uniti), che ospita il sito e registra i dati di navigazione. Il trasferimento verso gli Stati Uniti avviene con le garanzie previste dal GDPR (EU-U.S. Data Privacy Framework o clausole contrattuali standard della Commissione europea).',
+            'Google Ireland Limited e Google LLC, solo se scegli di caricare la mappa.',
+          ],
+          after: [
+            'I dati non sono diffusi né venduti. Possono essere comunicati alle autorità solo quando la legge lo impone.',
+          ],
+        },
+        {
+          heading: '6. I tuoi diritti',
+          paragraphs: [
+            'In qualsiasi momento puoi chiedere di accedere ai tuoi dati, rettificarli o cancellarli, limitarne il trattamento, opporti al trattamento basato sul legittimo interesse e ricevere i dati che ci hai fornito in un formato strutturato (artt. 15–22 GDPR). Per farlo scrivi a info@cptax.it.',
+            'Se ritieni che il trattamento violi il GDPR, puoi proporre reclamo al Garante per la protezione dei dati personali (www.garanteprivacy.it).',
+          ],
+          list: [
+          ],
+          after: [
+          ],
+        },
+      ],
+    },
+    cookie: {
+      title: 'Cookie Policy',
+      intro: 'Questa pagina spiega quali strumenti di memorizzazione usa il sito cptax.it, secondo le Linee guida del Garante per la protezione dei dati personali sui cookie (10 giugno 2021).',
+      sections: [
+        {
+          heading: '1. Niente cookie di profilazione o di statistica',
+          paragraphs: [
+            'Il sito non installa cookie di profilazione, di statistica o di marketing e non usa strumenti di tracciamento di terze parti.',
+          ],
+          list: [
+          ],
+          after: [
+          ],
+        },
+        {
+          heading: '2. Memorizzazione tecnica',
+          paragraphs: [
+            'Per funzionare, il sito salva nel tuo browser (localStorage) due informazioni tecniche, che non vengono inviate né a noi né a terzi:',
+          ],
+          list: [
+            'spc-lang: la lingua che hai scelto (italiano o inglese).',
+            'spc-map-consent: se hai scelto di mostrare la mappa di Google.',
+          ],
+          after: [
+            'Sono strettamente necessarie a fornirti il servizio che chiedi, quindi non richiedono il consenso.',
+          ],
+        },
+        {
+          heading: '3. Google Maps',
+          paragraphs: [
+            'La mappa nella sezione «Dove siamo» è un contenuto di Google e non viene caricata finché non premi «Mostra mappa». Solo da quel momento Google riceve dati di navigazione, come l\'indirizzo IP, e può impostare propri cookie secondo la sua informativa (policies.google.com/technologies/cookies).',
+            'Senza caricare la mappa puoi comunque usare il link «Ottieni indicazioni», che apre Google Maps in una nuova scheda.',
+          ],
+          list: [
+          ],
+          after: [
+          ],
+        },
+        {
+          heading: '4. Come revocare la scelta',
+          paragraphs: [
+            'Puoi revocare in ogni momento la scelta di mostrare la mappa con il pulsante qui sotto. Puoi anche cancellare i dati salvati dal sito e i cookie di Google dalle impostazioni del tuo browser.',
+          ],
+          list: [
+          ],
+          after: [
+          ],
+        },
+      ],
+      revoke: {
+        button: 'Revoca il consenso alla mappa',
+        done: 'Fatto: la mappa non verrà caricata finché non premi di nuovo «Mostra mappa».',
+        notSet: 'Al momento la mappa non è attiva: non c\'è nulla da revocare.',
+      },
+    },
   },
   meta: {
     title: 'Studio Costanzi & Pizzi | Commercialisti Milano dal 2002',
