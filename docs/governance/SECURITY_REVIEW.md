@@ -22,6 +22,7 @@
 - **`npm audit`** (17/11/2026, after the change): 2 findings, 1 high + 1 moderate, both the `postcss` copy bundled inside `next` (see §2). 0 critical.
 - **Secrets scan**: `grep` for api key / secret / token / password in `src/`, `content/`, `next.config.js` → none found.
 - **New personal-data processing**: none. The new code only reads and writes two technical `localStorage` keys (`spc-lang`, `spc-map-consent`) that never leave the browser.
+- **Build fix**: the first deploy of `fb22499` failed on Vercel. Cause, reproduced from a clean clone: `next/font/google` intermittently receives `fonts.gstatic.com/l/font?kit=…` URLs without a file extension and crashes on them. Fix: fonts self-hosted with `next/font/local`; 3 consecutive clean builds pass.
 - **Verified in the browser** (production build, desktop and 375px width): no request to Google before "Mostra mappa"; security headers present (`curl -I`); `/privacy` and `/cookie` render in IT and EN.
 
 ## 1. Data governance
@@ -31,7 +32,7 @@
 | D1 | Contact form → builds a `mailto:` link (`Contact.tsx:64`) → the visitor's own mail client | name, email, phone, message | none: **no server receives the data** | good choice, minimal risk. The privacy notice must still cover emails received at `info@cptax.it` |
 | D2 | Page view → Vercel | IP address, request logs | Vercel (US) | the privacy policy should name Vercel as hosting provider/processor |
 | D3 | Google Maps iframe | IP, cookies | Google | loaded **only after the visitor clicks "Mostra mappa"** (`src/components/MapEmbed.tsx`); choice stored in localStorage, revocable from `/cookie`. L2 resolved |
-| D4 | Fonts | none at runtime | — | `next/font/google` self-hosts the fonts at build time: **no runtime request to Google** ✅ (this avoids the "Google Fonts" GDPR issue) |
+| D4 | Fonts | none | — | Inter and Playfair Display are committed in `src/app/fonts/` and loaded with `next/font/local` (17/11/2026): no request to Google at build time or at runtime ✅ |
 
 No analytics, tracking pixels, chat widgets or AI services found (grep of `src/`, `content/`).
 Encryption in transit: HTTPS by Vercel. Security headers set in `next.config.js` (17/11/2026): CSP (`frame-src` limited to www.google.com and maps.google.com, `frame-ancestors 'none'`, `object-src 'none'`), HSTS (2 years, includeSubDomains), `X-Content-Type-Options: nosniff`, `Referrer-Policy: strict-origin-when-cross-origin`, `Permissions-Policy` (camera, microphone, geolocation, payment, usb, browsing-topics off). The CSP keeps `'unsafe-inline'` for scripts and styles: Next.js inline bootstrap scripts and Framer Motion inline styles need it without per-request nonces.
@@ -39,7 +40,7 @@ Encryption in transit: HTTPS by Vercel. Security headers set in `next.config.js`
 ## 2. Dependencies & licensing
 
 `npm audit` after the fix (17/11/2026): `next` and `eslint-config-next` 15.5.19 → **15.5.29** (latest 15.x), `npm audit fix`, and `brace-expansion` updated within its range. **Remaining: 1 high + 1 moderate, the same issue**: `postcss` ≤ 8.5.22 bundled inside `next` itself (`node_modules/next/node_modules/postcss`). It runs only at build time on the site's own CSS, so no attacker-controlled CSS reaches it. The only fix is `next@16` (major upgrade) → accepted residual risk, to revisit with the Next 16 upgrade.
-Licenses: next, react, framer-motion, lucide-react (ISC), clsx, tailwind — MIT/ISC, compatible.
+Licenses: next, react, framer-motion, lucide-react (ISC), clsx, tailwind — MIT/ISC, compatible. Fonts: Inter and Playfair Display, SIL Open Font License 1.1 (self-hosting allowed).
 `.agents/` and `.claude/` (26 files: design and animation skills) are committed to the public repo. They aren't served by the site; it's just tidiness.
 
 ## 3. Threat model

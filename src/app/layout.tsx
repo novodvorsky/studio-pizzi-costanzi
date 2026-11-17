@@ -1,21 +1,25 @@
 import type { Metadata, Viewport } from 'next'
-import { Playfair_Display, Inter } from 'next/font/google'
+import localFont from 'next/font/local'
 import './globals.css'
 import { LanguageProvider } from '@/contexts/LanguageContext'
 import MotionProvider from '@/components/MotionProvider'
 
-const playfair = Playfair_Display({
-  subsets: ['latin'],
+// Self-hosted (OFL, latin variable fonts from Google Fonts): next/font/google fails
+// intermittently at build time when Google returns /l/font?kit= URLs without an extension.
+const playfair = localFont({
+  src: './fonts/PlayfairDisplay-latin-var.woff2',
   variable: '--font-playfair',
   display: 'swap',
-  weight: ['400', '500', '600', '700'],
+  weight: '400 700',
+  fallback: ['Georgia', 'serif'],
 })
 
-const inter = Inter({
-  subsets: ['latin'],
+const inter = localFont({
+  src: './fonts/Inter-latin-var.woff2',
   variable: '--font-inter',
   display: 'swap',
-  weight: ['300', '400', '500', '600'],
+  weight: '300 600',
+  fallback: ['system-ui', 'sans-serif'],
 })
 
 export const metadata: Metadata = {
